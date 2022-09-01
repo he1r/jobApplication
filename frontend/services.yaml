@@ -1,0 +1,313 @@
+openapi: 3.0.0
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: http://localhost:3001/
+info:
+  description: lufthansa api
+  version: "1.0.0"
+  title: test
+paths:
+  /login:
+    post:
+      operationId: login
+      summary: user login
+      description: user login
+      requestBody:
+        description: body login
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+                - password
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+  /signUp:
+    post:
+      operationId: signUp
+      summary: user SignUp
+      description: userSignUp
+      requestBody:
+        description: body signUp
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+                - surname
+                - email
+                - birthday
+                - password
+                - role
+              properties:
+                name:
+                  type: string
+                surname:
+                  type: string
+                email:
+                  type: string
+                birthday:
+                  type: string
+                password:
+                  type: string
+                role:
+                  type: string
+  /updateUser:
+    post:
+      operationId: updateUser
+      summary: user SignUp
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - userId
+                - name
+                - surname
+                - email
+                - birthday
+                - role
+              properties:
+                userId:
+                  type: string
+                name:
+                  type: string
+                surname:
+                  type: string
+                email:
+                  type: string
+                birthday:
+                  type: string
+                role:
+                  type: string
+  /createJobListing:
+    post:
+      operationId: createJob
+      summary: recruiter creates job listing
+      description: createJobListing
+      requestBody:
+        description: body create job listing
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - user_id
+                - job_tittle
+                - job_category
+                - job_description
+                - job_skill
+                - job_price
+              properties:
+                user_id:
+                  type: string
+                job_tittle:
+                  type: string
+                job_category:
+                  type: string
+                job_description:
+                  type: string
+                job_skill:
+                  type: string
+                job_price:
+                  type: string
+  /updateJobListing:
+    post:
+      operationId: updateJobListing
+      summary: recruiter updates job listing
+      requestBody:
+        description: body update job listing
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - jobId
+                - job_tittle
+                - job_category
+                - job_description
+                - job_skill
+                - job_price
+              properties:
+                jobId:
+                  type: string
+                job_tittle:
+                  type: string
+                job_category:
+                  type: string
+                job_description:
+                  type: string
+                job_skill:
+                  type: string
+                job_price:
+                  type: string
+  /addFavouriteJobListing:
+    post:
+      operationId: addFavouriteJobListing
+      summary: adds a favourite listing for the user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - jobId
+                - user_id
+              properties:
+                jobId:
+                  type: string
+                user_id:
+                  type: string
+  /addJobApplication:
+    post:
+      operationId: addJobApplication
+      summary: adds a jobApplication for the user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - job_id
+                - user_id
+                - application_reason
+              properties:
+                job_id:
+                  type: string
+                user_id:
+                  type: string
+                application_reason:
+                  type: string
+  /getUserJobApplications:
+    post:
+      operationId: getUserJobApplications
+      summary: gets all user job applications
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - user_id
+              properties:
+                user_id:
+                  type: string
+  /removeFavouriteJobListing:
+    post:
+      operationId: removeFavouriteJobListing
+      summary: adds a favourite listing for the user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - jobId
+              properties:
+                jobId:
+                  type: string
+  /updatePassword:
+    post:
+      operationId: updatePassword
+      summary: update user password
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - id
+                - oldPassword
+                - newPassword
+                - confirmPassword
+              properties:
+                id:
+                  type: string
+                oldPassword:
+                  type: string
+                newPassword:
+                  type: string
+                confirmPassword:
+                  type: string
+  /getJobListings:
+    post:
+      operationId: getAllJobLstings
+      summary: gets all job listings
+  /getUserJobListingFavourites:
+    post:
+      operationId: getUserJobListingFavourites
+      summary: gets all user job listings favourites
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - user_id
+              properties:
+                user_id:
+                  type: string
+  /getUsers:
+    post:
+      operationId: getAllUsers
+      summary: gets all users
+      description: getUsers
+  /getUserListings:
+    post:
+      operationId: getUserListings
+      summary: gets all user listings
+      description: getUserListings
+      requestBody:
+        description: job listings for the user
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - user_id
+              properties:
+                user_id:
+                  type: string
+  /deleteJobListing:
+    post:
+      operationId: deleteJobListing
+      summary: deletes a jobListing
+      description: deletes a job listing
+      requestBody:
+        description: job listing id
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - listingId
+              properties:
+                listingId:
+                  type: string
+    Bearer:
+      type: apiKey
+      description: Place to add JWT with Bearer
+      name: Authorization
+      in: header
+security:
+  - Bearer: []

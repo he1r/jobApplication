@@ -1,0 +1,244 @@
+.profile_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    flex-direction: row;
+    background-image: linear-gradient(to right top, #ffffff, #f7fcff, #e8faff, #d3fbff, #c1fbfd);
+}
+
+.profile_body_container {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main_div {
+    display: flex;
+}
+
+.profile_badge {
+    width: 30%;
+    height: max-content;
+    margin-left: 2vw;
+    padding: 20px;
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    border-right: 2px solid black;
+}
+
+.profile_settings {
+    width: 70%;
+    margin-top: 10vh;
+}
+
+.settings_page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+.avatar_div {
+    display: flex;
+    justify-content: center;
+}
+
+.profile_avatar {
+    border-radius: 100px;
+}
+
+
+.user_name {
+    display: flex;
+    margin-top: 2vh;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.upload_pic {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    width: 300px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.upload_pic:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.upload_pic:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.upload_pic:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.first_input_div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+}
+
+.inputs_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstName_input {
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    width: 20vw;
+    font-size: 20px;
+    color: black;
+}
+
+.firstName_input::placeholder {
+    color: black;
+}
+
+.firstName_input:focus {
+    outline: none;
+    border: none;
+}
+
+.firstName_label {
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.surname_label {
+    margin-left: 30px;
+}
+
+.second_input_div {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    margin-left: 10vw;
+}
+
+.buttons_div {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    margin-left: 10vw;
+}
+
+.button {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    width: 200px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.second_button {
+    margin-left: 20px;
+}
+
+.main_body {
+    display: flex;
+    width: 78vw;
+    flex-direction: column;
+}
+
+.favourites_body {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+}
+
+.favourite_label {
+    margin-left: 5vw;
+    margin-top: 5vh;
+    font-size: 25px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.userProfileValidation {
+    font-weight: bold;
+    color: red;
+}
+
+.error_span_div {
+    margin-top: 10px
+}

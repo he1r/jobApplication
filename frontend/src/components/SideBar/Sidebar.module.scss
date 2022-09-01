@@ -1,0 +1,38 @@
+.container {
+	height: 100vh;
+	overflow: visible;
+	z-index: 1000;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.close_menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
+	height: 100px;
+}
+
+.lufthansa_logo {
+	margin-right: 20px
+}
+
+.logout_text {
+	color: #ABABAB;
+}
+
+.sidebar_content {
+	background-color: black
+}
+
+.sidebar_text {
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.footer {
+	color: #ABABAB;
+}

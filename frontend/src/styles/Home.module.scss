@@ -1,0 +1,44 @@
+.container {
+	min-height: 100vh;
+	background-image: linear-gradient(to right top, #ffffff, #f9fdff, #ebfdff, #dbffff, #d3fff5, #d3fff5, #d3fff5, #d3fff5, #dbffff, #ebfdff, #f9fdff, #ffffff);
+	display: flex;
+	height: max-content;
+	background-size: cover;
+}
+
+.jobsBody {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: max-content;
+	flex-direction: column;
+}
+
+.job_search {
+	margin-top: 7vh
+}
+
+.input_search {
+	width: 30vw;
+	height: 5vh;
+	background-image: white;
+	padding-left: 5px;
+	color: black;
+	border: 1px solid transparent;
+	font-size: 15px;
+	box-shadow:
+		3px 3px 0px 0px rgb(0 0 0), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+	font-weight: bold;
+}
+
+.input_search:focus {
+	outline: none;
+}
+
+.input_search::placeholder {
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 10px;
+}

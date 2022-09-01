@@ -1,0 +1,168 @@
+.container {
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #ffffff, #f9fdff, #ebfdff, #dbffff, #d3fff5, #d3fff5, #d3fff5, #d3fff5, #dbffff, #ebfdff, #f9fdff, #ffffff);
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.jobGoBack {
+    margin-left: 20px;
+}
+
+.jobHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    font-size: 72px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.jobDescription_label {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jobDescription {
+    margin-top: 10px;
+    font-size: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.row_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+
+.column_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionLabel {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.job_data_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 2px solid red;
+}
+
+.reason_div {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_div {
+    margin-top: 5vh;
+}
+
+.apply_reason_input {
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 80vw;
+    font-size: 20px;
+    color: black;
+    resize: none;
+}
+
+.apply_reason_input::placeholder {
+    color: black;
+}
+
+.apply_reason_input:focus {
+    outline: none;
+}
+
+.apply_button_div {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apply_button {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    width: 200px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.apply_button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.apply_button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.apply_button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.error_span {
+    font-weight: bold;
+    color: red;
+}
+
+.span_div {
+    width: 100%;
+    height: 20px;
+}

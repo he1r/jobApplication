@@ -114,7 +114,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `First_Name`, `Surname`, `Birthday`, `Email`, `Password`, `Role`) VALUES
-(1, 'klajdi', 'halili', '2002-06-22', 'admin@gmail.com', 'adminKlajdi22@', 'recruiter'),
+(1, 'klajdi', 'test', '2002-06-22', 'admin@gmail.com', 'adminKlajdi22@', 'recruiter'),
 (11, 'heir', 'user', '2002-06-22', 'user@gmail.com', 'userKlajdi22@', 'user');
 
 --
